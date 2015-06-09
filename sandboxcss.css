@@ -1,0 +1,495 @@
+/*Skeleton Grid*/
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 3%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .one.column,
+  .one.columns                    { width: 4.66666666667%; }
+  .two.columns                    { width: 13.3333333333%; }
+  .three.columns                  { width: 22%;            }
+  .four.columns                   { width: 30.6666666667%; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 48%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns                  { width: 65.3333333333%; }
+  .nine.columns                   { width: 74.0%;          }
+  .ten.columns                    { width: 82.6666666667%; }
+  .eleven.columns                 { width: 91.3333333333%; }
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+
+  .one-third.column               { width: 30.6666666667%; }
+  .two-thirds.column              { width: 65.3333333333%; }
+
+  .one-half.column                { width: 48%; }
+
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns          { margin-left: 8.66666666667%; }
+  .offset-by-two.column,
+  .offset-by-two.columns          { margin-left: 17.3333333333%; }
+  .offset-by-three.column,
+  .offset-by-three.columns        { margin-left: 26%;            }
+  .offset-by-four.column,
+  .offset-by-four.columns         { margin-left: 34.6666666667%; }
+  .offset-by-five.column,
+  .offset-by-five.columns         { margin-left: 43.3333333333%; }
+  .offset-by-six.column,
+  .offset-by-six.columns          { margin-left: 52%;            }
+  .offset-by-seven.column,
+  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
+  .offset-by-eight.column,
+  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
+  .offset-by-nine.column,
+  .offset-by-nine.columns         { margin-left: 78.0%;          }
+  .offset-by-ten.column,
+  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns     { margin-left: 52%; }
+
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300; }
+h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
+h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
+h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
+h4 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
+h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 { font-size: 5.0rem; }
+  h2 { font-size: 4.2rem; }
+  h3 { font-size: 3.6rem; }
+  h4 { font-size: 3.0rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.5rem; }
+}
+
+/*Social Media Button Styles 
+https://github.com/timhuisman/css-social-media-buttons*/
+.csmb, .csmb-flat {
+  background-image: url("http://elishebafay.com/Resume/icon-sprite.png");
+  background-repeat: no-repeat;
+  -webkit-transition: background-color 0.25s ease;
+  -moz-transition: background-color 0.25s ease;
+  -ms-transition: background-color 0.25s ease;
+  -o-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+  text-indent: -9999px;
+  font-size: 0;
+  line-height: 0;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin: 4px;
+  padding: 0;
+  position: relative; 
+}
+.csmb:before, .csmb:after, .csmb-flat:before, .csmb-flat:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+  .csmb, .csmb-flat {
+    background-image: url("http://elishebafay.com/Resume/icon-sprite-x2.png");
+    -webkit-background-size: 84px;
+    -moz-background-size: 84px;
+    background-size: 84px; } 
+}
+
+a.csmb:hover, a.csmb:focus, a.csmb:active, a.csmb-flat:hover, a.csmb-flat:focus, a.csmb-flat:active, button.csmb:hover, button.csmb:focus, button.csmb:active, button.csmb-flat:hover, button.csmb-flat:focus, button.csmb-flat:active {
+  outline: none; }
+
+button.csmb, button.csmb-flat {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  padding: 0; }
+
+.csmb:before {
+  -webkit-box-shadow: 0 0 4px 0 #aaaaaa;
+  box-shadow: 0 0 4px 0 #aaaaaa; }
+.csmb:after {
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.25)), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%); }
+
+.csmb-flat:before {
+  -webkit-box-shadow: 0 0 1px 0 #aaaaaa;
+  box-shadow: 0 0 1px 0 #aaaaaa; }
+
+.csmb-rounded, .csmb-rounded:before, .csmb-rounded:after {
+  -webkit-border-radius: 25%;
+  border-radius: 25%; }
+
+.csmb-round, .csmb-round:before, .csmb-round:after {
+  -webkit-border-radius: 50%;
+  border-radius: 50%; }
+
+.csmb-border:before {
+  border: solid 2px #fff;
+  width: 32px;
+  height: 32px;
+  top: -4px;
+  left: -4px; }
+.csmb-border:after {
+  -webkit-transition: border-color 0.25s ease;
+  -moz-transition: border-color 0.25s ease;
+  -ms-transition: border-color 0.25s ease;
+  -o-transition: border-color 0.25s ease;
+  transition: border-color 0.25s ease;
+  top: -2px;
+  left: -2px; }
+.csmb-border.csmb-rounded {
+  -webkit-border-radius: 20%;
+  border-radius: 20%; 
+}
+.mail {
+  background-color: #f4f4f4;
+  background-position: 0 -224px; 
+}
+.mail.csmb {
+  -webkit-box-shadow: inset 0 1px 2px 0 white;
+  box-shadow: inset 0 1px 2px 0 white; }
+.mail.csmb-border:after {
+  border: solid 2px #dbdbdb; }
+
+a.mail:hover, a.mail:focus, button.mail:hover, button.mail:focus {
+  background-color: white; }
+a.mail:active, button.mail:active {
+  background-color: #dbdbdb; }
+a.mail.csmb-border:hover:after, a.mail.csmb-border:focus:after, a.mail.csmb-border:active:after, button.mail.csmb-border:hover:after, button.mail.csmb-border:focus:after, button.mail.csmb-border:active:after {
+  border: solid 2px #c7c7c7; }
+
+.facebook {
+  background-color: #3b5998;
+  background-position: 0 0; }
+.facebook.csmb {
+    -webkit-box-shadow: inset 0 1px 2px 0 #839ccf;
+    box-shadow: inset 0 1px 2px 0 #839ccf; }
+.facebook.csmb-border:after {
+    border: solid 2px #2d4373; }
+
+a.facebook:hover, a.facebook:focus, button.facebook:hover, button.facebook:focus {
+  background-color: #4c70ba; }
+a.facebook:active, button.facebook:active {
+  background-color: #2d4373; }
+a.facebook.csmb-border:hover:after, a.facebook.csmb-border:focus:after, a.facebook.csmb-border:active:after, button.facebook.csmb-border:hover:after, button.facebook.csmb-border:focus:after, button.facebook.csmb-border:active:after {
+  border: solid 2px #223358; }
+.facebook.alt {
+  background-position: -28px -84px; }
+/*Menu Styles*/
+#primary_nav_wrap{padding: 20% 0;
+}
+#primary_nav_wrap ul li{
+  list-style: none;
+  position:relative;
+  margin:0;
+  padding:0;
+  text-align: center;
+  background-color: #2C312C;
+}
+#primary_nav_wrap ul a
+{display:block;
+  color:#7a877a;
+  font-weight:500;
+  font-size:1.2em;
+  line-height:36px;
+  padding:0 15px;
+  text-decoration: none;
+  font-family: Trebuchet MS;
+}
+
+#primary_nav_wrap ul li.current-menu-item{ 
+  background:#272e27;
+}
+
+#primary_nav_wrap ul li:hover{
+  background:#373e37;
+}
+
+/*Slideshow Styles*/
+
+.bss-slides{
+  margin:auto;
+  position: relative;
+  display: block; 
+  max-height: 700px;
+  background: red;  
+  height:800px; 
+}
+.bss-slides:focus{
+ outline: 0;
+}
+.bss-slides figure{
+  position: absolute;
+  top: 0;
+  margin:auto;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center;
+  min-height:100%;
+}
+.bss-slides figure:first-child{
+  position: relative;
+}
+.bss-slides figure img{
+  opacity: 0;
+  -webkit-transition: opacity 1.2s;
+  transition: opacity 1.2s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.bss-slides .bss-show{
+  z-index: 2;
+}
+.bss-slides .bss-show img{
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative; 
+}
+
+.bss-slides figcaption{
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 1em;
+  width:40%;
+  bottom: -2.2em;
+  left: 30%;
+  padding: .25em;
+  color: #fff;
+  text-align: center;
+  background: #000;
+  background: rgba(0,0,0, .35);
+  border-radius: 2px;
+  opacity: 0;
+  -webkit-transition: opacity 1.2s;
+  transition: opacity 1.2s;
+}
+.bss-slides .bss-show figcaption{
+  z-index: 3;
+  opacity: 1;
+}
+.bss-slides figcaption a{
+  color: #fff;    
+}
+.bss-next, .bss-prev{
+  color: #fff;
+  position: absolute;
+  background: #000;
+  background: rgba(0,0,0, .6);
+  top: 50%;
+  z-index: 4;
+  font-size: 2em;
+  margin-top: -1.2em;
+  opacity: .3;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.bss-next:hover, .bss-prev:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+.bss-next{
+  right: -5%;
+  padding: 10px 5px 15px 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.bss-prev{
+  left: -5%;
+  padding: 10px 10px 15px 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.ss{padding-bottom:40px;}
+
+/*Body style*/
+body{background-image: url("http://elishebafay.com/ClydeStuff/PhotoGray_bg_c-1.jpg");
+  font-family: "Times New Roman", times, sans-serif;
+  margin:8px;
+}
+
+h3{color:#645d57;
+  text-shadow: 3px 3px 3px #272321;
+}
+a:link{color:#292f2f;}
+a:visited{color:#1d2222;
+}
+
+.ss-select ul{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+.ss-select li{
+  float:left;
+  width:25%;
+}
+.ss-select button{
+  display: block;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #8c9a8c;
+  background-color: #2c312c;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width:100%;
+}
+.ss-select button:hover{
+    background-color: #4e4545;
+}
+.ss-select button:active{
+    background-color: #393131;
+}
+
+aside{
+  background-color:#c1b8b0;
+  color:#2d2219;
+  padding:1%;
+  text-align: justify;
+  border-radius: 12px;
+  margin-right:1%;
+}
+
+.facess, .landscapess, .stillLifess{display:none;}
+
+#aboutText{
+  background-color:#c1b8b0;
+  color:#2d2219;
+  padding:10px;
+  border-radius:10px;
+}
+#clydePaints{
+  width:65%;
+  float:left;
+  border: 4px ridge #1c271c;
+  margin:5px;
+}
+#aboutAside{
+  text-align:center;
+}
+/*Link List Styles*/
+#links{
+  padding:10px;
+  margin:auto;
+}
+#links ul li{
+  list-style: none;
+  text-align: center;
+  background-color: #697576;
+}
+#links ul a
+{display:block;
+  color:#191d1d;
+  font-weight:500;
+  font-size:1.2em;
+  line-height:36px;
+  text-decoration: none;
+  font-family: Trebuchet MS;
+}
+#links ul li:hover{
+  background:#59696a;
+}
+.linktype{
+  display:block;
+  margin:0;
+  padding:0;
+  text-align: center;
+  background-color: #7f8c8d;
+  color:#1d1113;
+  font-weight:550;
+  font-size:1.3em;
+  line-height:36px;
+}
+/* Larger than mobile */
+@media (min-width: 400px) {
+  .ss-select li{
+    font-size:.75rem;
+  }
+  .ss-select button{padding:2px;}
+  p{font-size: 1rem}
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  .ss-select li{
+    font-size:.75rem;
+  }
+}
+@media (min-width: 688px) {
+  .ss-select li{
+    font-size:.7rem;
+  }
+  .ss-select button{padding:2px;}
+}
+
+/* Larger than tablet */
+@media (min-width: 720px) {
+  .ss-select li{font-size:1rem;}
+  p{font-size: 1.1rem}
+}
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    .ss-select li{
+    font-size:1.2rem;}
+    p{font-size:1.2rem}
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
